@@ -123,10 +123,10 @@ class AdjacencySetGraph(Graph):
         if weight != 1:
             raise ValueError("An adjacency set cannot represent edge weight > 1")
         
-        self.vertex_list[v1].add_edge
+        self.vertex_list[v1].add_edge(v2)
 
         if self.directed == False:
-            self.vertex_list[v2].add_edge(v1)
+            self.vertex_list[v2]. add_edge(v1)
 
     def get_adjacent_vertices(self, v):
         if v < 0 or v >= self.numVertices:
@@ -167,3 +167,5 @@ for i in range(4):
         print('Edge weight:', i, " ", j, "weight: ", g.get_edge_weight(i, j))
 
 g.display()
+
+ 

@@ -57,18 +57,6 @@ def shortest_path(graph, source, destination):
         path = [source] + path
         print("Shortest path is: ", path)
 
-g = AdjacencyMatrixGraph(8, directed=False)
-g.add_edge(0,1,1)
-g.add_edge(1,2,2)
-g.add_edge(1,3,6)
-g.add_edge(2,3,2)
-g.add_edge(1,4,3)
-g.add_edge(3,5,1)
-g.add_edge(5,4,5)
-g.add_edge(3,6,1)
-g.add_edge(6,7,1)
-g.add_edge(0,7,8)
 
-shortest_path(g, 0,6)
     
 
